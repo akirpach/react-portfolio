@@ -1,6 +1,8 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/profile.jpg";
 import { delay, motion } from "framer-motion";
+import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -25,14 +27,30 @@ const Hero = () => {
             >
               Albert Kirpach
             </motion.h1>
-            <motion.span
-              variants={container(0.5)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-neutral-100 via-slate-200 to-pink-300 bg-clip-text text-4xl tracking-tight text-transparent"
-            >
-              Full-Stack Developer
-            </motion.span>
+
+            <div className="flex flex-col items-center lg:flex-row lg:justify-center md:flex-row md:justify-center md:gap-4 w-full gap-4">
+              <motion.span
+                variants={container(0.5)}
+                initial="hidden"
+                animate="visible"
+                className="flex-shrink-0 bg-gradient-to-r from-neutral-100 via-slate-200 to-pink-300 bg-clip-text text-4xl tracking-tight text-transparent"
+              >
+                Full-Stack Developer
+              </motion.span>
+              <motion.a
+                variants={container(1.5)}
+                initial="hidden"
+                animate="visible"
+                href="mailto:uakirpach@gmail.com"
+                className="flex-shrink-0 md:ml-4 lg:ml-4"
+              >
+                <MagicButton
+                  title="Get in Touch"
+                  icon={<FaLocationArrow />}
+                  position="right"
+                />
+              </motion.a>
+            </div>
             <motion.p
               variants={container(1)}
               initial="hidden"
