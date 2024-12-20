@@ -6,6 +6,14 @@ developed digital solution to the Cleveland Clinic Foundation as a group project
  collaborated with EY consultants on blockchain solutions during COVID 19,
  and organized ISAO club as Vice President welcoming workshops sponsored by PathUI. Currently work as a Commercial BI developer for a leading Chemical Company. My knowledge span involves programming languages and data analytics. Outside of work, I enjoy exceling at sports, learning to play music, and traveling to new places.`;
 
+export const LINKS = [
+  {
+    linkedin: "https://www.linkedin.com/in/kirpacas/",
+    github: "https://github.com/akirpach",
+    x: "https://x.com/keyrpatch"
+  }
+]
+
 export const EXPERIENCES = [
   {
     year: "2022 - Present",
