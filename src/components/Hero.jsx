@@ -23,7 +23,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-neutral-900 dark:text-neutral-100"
             >
               Albert Kirpach
             </motion.h1>
@@ -33,7 +33,10 @@ const Hero = () => {
                 variants={container(0.5)}
                 initial="hidden"
                 animate="visible"
-                className="flex-shrink-0 bg-gradient-to-r from-neutral-100 via-slate-200 to-pink-300 bg-clip-text text-4xl tracking-tight text-transparent"
+                className="flex-shrink-0 bg-gradient-to-r 
+                from-neutral-700 to-purple-900
+                dark:from-neutral-100 dark:via-slate-200 dark:to-pink-300 
+                bg-clip-text text-4xl tracking-tight text-transparent"
               >
                 Full-Stack Developer
               </motion.span>
@@ -55,7 +58,9 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-2-xl py-6 font-light tracking-tigther"
+              className="my-2 max-2-xl py-6 font-light tracking-tigther
+              text-neutral-900
+              dark:text-neutral-100"
             >
               {HERO_CONTENT}
             </motion.p>

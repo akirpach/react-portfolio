@@ -8,10 +8,10 @@ const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       {/* Logo */}
-      <div className="flex flex-shrink-0 items-center text-4xl font-bold text-neutral-300">
+      <div className="flex flex-shrink-0 items-center text-4xl font-bold text-neutral-900 dark:text-neutral-300">
         AK
       </div>
-      <div>
+      <div className="text-neutral-900 dark:text-neutral-300">
         {LINKS.map((link, index) => (
           <div
             key={index}
